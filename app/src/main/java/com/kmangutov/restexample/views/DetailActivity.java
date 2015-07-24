@@ -76,7 +76,8 @@ public class DetailActivity extends ActionBarActivity {
     public void displayPost(Post post) {
 
         mTextViewTitle.setText(post.title);
-        mTextViewBody.setText(post.body);
+        //mTextViewBody.setText(post.body);
+        mTextViewBody.setText(post.id);
     }
 
     @Override

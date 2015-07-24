@@ -18,7 +18,7 @@ import rx.Observable;
  */
 public class ForumService {
 
-    private static final String FORUM_SERVER_URL = "http://jsonplaceholder.typicode.com";
+    private static final String FORUM_SERVER_URL = "http://192.168.43.131"; //"http://jsonplaceholder.typicode.com";
     private ForumApi mForumApi;
 
     public ForumService() {
@@ -47,7 +47,8 @@ public class ForumService {
 
     public interface ForumApi {
 
-        @GET("/posts")
+        @GET("/PDO_Connecting_to_a_MySQL_Database_using_the_PDO_Library_in_PHP")
+        //@GET("/posts")
         public Observable<List<Post>>
             getPosts();
 
